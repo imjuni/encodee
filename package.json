@@ -3,6 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/core": "^11.0.0",
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
+    "@mantine/core": "^4.2.12",
+    "@mantine/form": "^4.2.12",
+    "@mantine/hooks": "^4.2.12",
+    "@mantine/modals": "^4.2.12",
+    "@mantine/next": "^4.2.12",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
@@ -10,17 +18,31 @@
     "@types/node": "^16.11.43",
     "@types/react": "^18.0.14",
     "@types/react-dom": "^18.0.6",
+    "clipboard": "^2.0.11",
+    "fast-safe-stringify": "^2.1.1",
+    "jotai": "^1.7.3",
+    "loglevel": "^1.8.0",
+    "my-easy-fp": "^0.13.0",
+    "nanoid": "^4.0.0",
+    "node-polyglot": "^2.4.2",
+    "normalize.css": "^8.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
+    "rxjs": "^7.5.5",
     "typescript": "^4.7.4",
+    "uuid": "^8.3.2",
     "web-vitals": "^2.1.4"
   },
+  "homepage": "https://imjuni.github.io/encodee/",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -39,5 +61,27 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/plugin-syntax-bigint": "^7.8.3",
+    "@babel/plugin-transform-exponentiation-operator": "^7.18.6",
+    "@types/node-polyglot": "^2.4.2",
+    "@types/uuid": "^8.3.4",
+    "@typescript-eslint/eslint-plugin": "^5.30.5",
+    "@typescript-eslint/eslint-plugin-tslint": "^5.30.5",
+    "@typescript-eslint/parser": "^5.30.5",
+    "copy-webpack-plugin": "^11.0.0",
+    "cross-env": "^7.0.3",
+    "customize-cra": "^1.0.0",
+    "eslint": "^8.19.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-jsdoc": "^39.3.3",
+    "eslint-plugin-prefer-arrow": "^1.2.3",
+    "eslint-plugin-prettier": "^4.2.1",
+    "gh-pages": "^4.0.0",
+    "ncp": "^2.0.0",
+    "prettier-eslint": "^15.0.1",
+    "react-app-rewired": "^2.2.1"
   }
 }
